@@ -1,0 +1,368 @@
+/*
+	@name cart
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 700px; width: 700px; height: 1360px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#_bg__cart {
+	top: 0px;
+	left: 0px;
+	width: 700px;
+	height: 1360px;
+	background:rgba(42,52,57,1);
+}
+
+
+#your_cart {
+	top: 39px;
+	left: 431px;
+	width: 304px;
+	height: 124px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 60px;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#your_cart:before {
+
+	content: "Your cart";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#no_ {
+	top: 198px;
+	left: 49px;
+	width: 106px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#no_:before {
+
+	content: "No.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#service {
+	top: 198px;
+	left: 160px;
+	width: 176px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#service:before {
+
+	content: "Service";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#price {
+	top: 198px;
+	left: 582px;
+	width: 133px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#price:before {
+
+	content: "Price";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#total_ {
+	top: 1045px;
+	left: 38px;
+	width: 168.5px;
+	height: 92.5px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#total_:before {
+
+	content: "Total:";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#vnd {
+	top: 1045px;
+	left: 382px;
+	width: 148.5px;
+	height: 92.5px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 45px;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#vnd:before {
+
+	content: "VND";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#_1_ {
+	top: 320px;
+	left: 56px;
+	width: 59px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#_1_:before {
+
+	content: "1.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#_2_ {
+	top: 448px;
+	left: 56px;
+	width: 59px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#_2_:before {
+
+	content: "2.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#_3_ {
+	top: 576px;
+	left: 56px;
+	width: 59px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#_3_:before {
+
+	content: "3.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#_4_ {
+	top: 704px;
+	left: 56px;
+	width: 59px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#_4_:before {
+
+	content: "4.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#_5_ {
+	top: 832px;
+	left: 56px;
+	width: 59px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#_5_:before {
+
+	content: "5.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+#___img__back {
+	top: 0px;
+	left: 0px;
+	width: 160px;
+	height: 160px;
+	cursor: pointer;
+}
+
+
+#line_2 {
+	top: 375px;
+	left: 160px;
+	width: 374px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#line_3 {
+	top: 503px;
+	left: 160px;
+	width: 374px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#line_4 {
+	top: 631px;
+	left: 160px;
+	width: 374px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#line_5 {
+	top: 759px;
+	left: 160px;
+	width: 374px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#line_6 {
+	top: 887px;
+	left: 160px;
+	width: 374px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#line_7 {
+	top: 1015px;
+	left: 160px;
+	width: 540px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+#group_22 {
+	top: 1183px;
+	left: 245px;
+	width: 210px;
+	height: 69px;
+}
+
+#rectangle_24 {
+	top: 0px;
+	left: 0px;
+	width: 210px;
+	height: 69px;
+}
+
+
+#book {
+	top: 4px;
+	left: 51px;
+	width: 157.5px;
+	height: 92.5px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: left;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+}
+#book:before {
+
+	content: "Book";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+
+
+/* Add your custom CSS here */

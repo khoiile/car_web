@@ -1,0 +1,93 @@
+/*
+	@name login_wrong_noti
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 962px; height: 585px; margin-left: auto; margin-right: auto;  }
+
+#_bg__login_wrong_noti {
+	top: 0px;
+	left: 0px;
+	width: 962px;
+	height: 585px;
+	background:rgba(29,41,81,1);
+	border-radius: 50px;
+}
+
+
+#___img__alert {
+	top: 34px;
+	left: 392px;
+	width: 178px;
+	height: 159px;
+}
+
+
+#wrong_login_information__please_try_again_ {
+	top: 209px;
+	left: 75px;
+	width: 826px;
+	height: 239px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 70px;
+	text-align: center;
+	color: rgba(0,0,0,0);
+	opacity: 1;
+}
+#wrong_login_information__please_try_again_:before {
+
+	content: "Wrong login information. Please try again.";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FFFFFF;
+}
+
+#___img__btn {
+	top: 406px;
+	left: 251px;
+	width: 459px;
+	height: 112px;
+}
+
+#rectangle_15 {
+	top: 0px;
+	left: 0px;
+	width: 459px;
+	height: 112px;
+}
+
+
+#try_again {
+	top: 15px;
+	left: 90px;
+	width: 293px;
+	height: 124px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(0,0,0,0);
+	opacity: 1;
+}
+#try_again:before {
+
+	content: "Try again";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #000000;
+}
+
+
+
+/* Add your custom CSS here */
