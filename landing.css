@@ -969,6 +969,28 @@ div { position: absolute; }
 	color: red;
 }
 
+#service {
+	top: 108px;
+	left: 1606px;
+	width: 166px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Nunito;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(0,0,0,0.25);
+	opacity: 1;
+	cursor: pointer
+}
+#service:before {
+
+	content: "Service";
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #FF8C00;
+}
 
 #sign_up {
 	top: 108px;

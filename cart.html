@@ -21,6 +21,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" >
 		<link rel="StyleSheet" href="cart.css" />
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
 		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
 		<!-- Add your custom HEAD content here -->
 
@@ -49,9 +51,6 @@
 			<div id="service" >
 				Service
 			</div>
-			<div id="price" >
-				Price
-			</div>
 			<div id="total_" >
 				Total:
 			</div>
@@ -79,16 +78,26 @@
 			<div id="line_4"  ></div>
 			<div id="line_5"  ></div>
 			<div id="line_6"  ></div>
-			<div id="line_7"  ></div>
 
 			<div id="group_22"  >
 				<img src="skins/rectangle_24.png" id="rectangle_24" />
-				<div id="book" >
+				<div id="book" onclick="chooseDate()" >
 					Book
+				</div>
+				<div class="wrap_input_date" id="wrap_choose">
+					<div class="in_choose_date">
+						<input type="date" id="input_date">
+						<button class="acpt_date" id="acpt_book" onclick="Booking()">Choose</button>
+						<button class="acpt_date" id="close_book" onclick="closeChoose()">Close</button>
+					</div>
+					
 				</div>
 
 			</div>
+			
 
 		</div>
+
+		<script src="cart.js"></script>
 	</body>
 </html>

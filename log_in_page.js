@@ -7,25 +7,11 @@ document.addEventListener("DOMContentLoaded",()=>{
             "x-auth-token" : token
         },
         success : function (data){
-            window.location.href="landing.html"
+            window.location.href="services.html"
             console.log(data)
         },
         error : function (err){
-            const json = err
-            switch(err.status){
-                case 400:
-                    console.log(json)
-                    break
-    
-                case 401:
-                    console.log(json)
-                    break
-    
-                case 500:
-                    console.log(json)
-    
-                    break
-            }
+            
         }
     })
 })
@@ -42,10 +28,28 @@ function login(){
         },
         success : function(data){
             localStorage.setItem("pretique_car_token_account",data.token)
-            window.location.href="landing.html"
+            localStorage.setItem("pretique_car_id_user", data.id)
+            // alert(data.id)
+            window.location.href="services.html"
         },
         error : function(err){
             console.log(err)
+            const json = err
+            switch(err.status){
+                case 400:
+                    console.log(json)
+                    alert("Wrong information, please try again!")
+                    break
+    
+                case 401:
+                    console.log(json)
+                    break
+    
+                case 500:
+                    console.log(json)
+                    alert("Server error, cannot login!")
+                    break
+            }
         }
     })
 }

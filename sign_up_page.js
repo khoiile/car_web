@@ -11,21 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             console.log(data)
         },
         error : function (err){
-            const json = err
-            switch(err.status){
-                case 400:
-                    console.log(json)
-                    break
-    
-                case 401:
-                    console.log(json)
-                    break
-    
-                case 500:
-                    console.log(json)
-    
-                    break
-            }
+            console.log(err)
         }
     })
 })
@@ -48,10 +34,26 @@ function register(){
             phoneNumber : sdt
         },
         success : function(data){
+            alert("Sign up successful!")
             window.location.href="log_in_page.html"
         },
         error : function(err){
-            console.log(err)
+            const json = err
+            switch(err.status){
+                case 400:
+                    console.log(json)
+                    alert("User already exists!")
+                    break
+    
+                case 401:
+                    console.log(json)
+                    break
+    
+                case 500:
+                    console.log(json)
+                    alert("Server error!")
+                    break
+            }
         }
     })
 }

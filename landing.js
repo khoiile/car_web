@@ -15,6 +15,7 @@ function check(){
             $("#log_in").hide()
             $("#sign_up").hide()
             $("#log_out").show()
+            $("#service").show()
         },
         error : function(err){
             console.log(err)
