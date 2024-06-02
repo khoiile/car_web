@@ -39,7 +39,7 @@ function check(){
 
 function checkCart(){
     const token = localStorage.getItem("pretique_car_token_account") || null
-    const id_order = localStorage.getItem("pretique_car_id_order") || null
+    const id_order = localStorage.getItem("pretique_car_id_order")
     const idu = localStorage.getItem("pretique_car_id_user") || null
     if(id_order){
         console.log(id_order)
@@ -55,10 +55,10 @@ function checkCart(){
             success : function(data) {
                 console.log(data)
 
-                document.getElementById("name_").innerText = `Name: ${data.cus.Name}`
-                document.getElementById("phone_number_").innerText = `Phone: ${data.cus.PhoneNumber}`
-                document.getElementById("e_mail_").innerText = `Email: ${data.cus.Email}`
-                document.getElementById("address_").innerText = `Address: ${data.cus.Address}`
+                document.getElementById("name_").innerText = `Name: ${data.order.Name}`
+                document.getElementById("phone_number_").innerText = `Phone: ${data.order.PhoneNumber}`
+                document.getElementById("e_mail_").innerText = `Email: ${data.order.Email}`
+                document.getElementById("address_").innerText = `Address: ${data.order.Address}`
                 document.getElementById("booked_date_").innerText = `Booked date: ${data.order.DateOrder}`
 
                 var count = 0

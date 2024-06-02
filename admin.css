@@ -1,156 +1,52 @@
-/*
-	@name admin
-*/
-/* Only edit this if you know what you are doing! */
-body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
-
-/* Only edit this if you know what you are doing! */
-img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
-
-/* Only edit this if you know what you are doing! */
-div { position: absolute; }
-
-#content-container { display: block; position: relative; width: 1920px; width: 1920px; height: 2000px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
-
-#_bg__admin {
-	top: 0px;
-	left: 0px;
-	width: 1920px;
-	height: 2000px;
-	background:rgba(255,255,255,1);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:"Arial";
 }
 
-
-#title_box {
-	top: 0px;
-	left: 0px;
-	width: 1920px;
-	height: 132px;
+.wrap_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 5%; 
 	background:rgba(42,52,57,1);
 }
 
-
-#welcome__admin_ {
-	top: 133px;
-	left: 663px;
-	width: 610px;
-	height: 142px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 70px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+.wrap_logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-
-#order_id {
-	top: 500px;
-	left: 115px;
-	width: 181px;
-	height: 81px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+.logo{
+	width: 200px;
 }
 
-
-#customer_id {
-	top: 500px;
-	left: 483px;
-	width: 256px;
-	height: 81px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+.list{
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
 }
 
-
-#amount {
-	top: 500px;
-	left: 953px;
-	width: 176px;
-	height: 81px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+a{
+	text-decoration: none;
+	cursor: pointer;
 }
 
-
-#date {
-	top: 500px;
-	left: 1344px;
-	width: 111px;
-	height: 81px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+#logout{
+	color: red;
 }
 
-
-#status {
-	top: 500px;
-	left: 1683px;
-	width: 146px;
-	height: 81px;
-	overflow: hidden;
-	font-family: Exo;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: center;
-	color:#000000;
+.list_item{
+	color: white;
 }
 
-
-#___img__logo {
-	top: 0px;
-	left: 0px;
-	width: 344px;
-	height: 132px;
+.wrap_header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
 }
-
-
-#rectangle_25 {
-	top: 175px;
-	left: 1409px;
-	width: 423px;
-	height: 79px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	background:rgba(217,217,217,1);
-}
-
-
-#image_30 {
-	top: 180px;
-	left: 1409px;
-	width: 79px;
-	height: 69px;
-}
-
-
-#image_31 {
-	top: 215px;
-	left: 76px;
-	width: 202px;
-	height: 215px;
-}
-
-
-
-/* Add your custom CSS here */
